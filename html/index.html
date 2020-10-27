@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/bootstrap-4.5.2-dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../css/bootstrap-4.5.2-dist/js/bootstrap.min.js">
+  <link rel="stylesheet" href="../css/index.css">
+  <title>Atividade Alura - 01</title>
+</head>
+
+<body>
+  <header>
+    <div>
+      <h1 class="title-header">Roberte Nutricionista</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="container">
+
+      <div class="mensagem-view"></div>
+
+      <h2>Meus Pacientes</h2>
+
+      <div id="pacientes-view"></div>
+
+    </section>
+    <section class="container">
+
+
+      <h2>Adiconar Novo Paciente</h2>
+
+      <form onsubmit="controller.adiciona(event)">
+        <label for="nome">Nome</label>
+        <input class="form-control" type="text" id="nome" data-tipo="nome">
+
+        <label for="peso">Peso</label>
+        <input class="form-control" type="number" id="peso" data-tipo="peso">
+
+        <label for="altura">Altura</label>
+        <input class="form-control" type="number" id="altura" data-tipo="altura" step=".01">
+
+        <button class="btn btn-primary" type="submit">Adicionar</button>
+      </form>
+    </section>
+  </main>
+  <script src="../js/Paciente.js"></script>
+  <script src="../js/PacienteController.js"></script>
+  <script src="../js/ListaPacientes.js"></script>
+  <script src="../js/View.js"></script>
+  <script src="../js/PacientesView.js"></script>
+  <script src="../js/Mensagem.js"></script>
+  <script src="../js/MensagemView.js"></script>
+  <script>let controller = new PacienteController();</script>
+</body>
+
+</html>
