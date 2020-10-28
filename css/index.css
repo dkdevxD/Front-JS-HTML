@@ -37,6 +37,7 @@ section h2 {
 
 form {
   display: flex;
+  justify-content: flex-start;
   margin-top: 50px;
 }
 
@@ -49,6 +50,17 @@ form .form-control {
   margin-right: 1em;
 }
 
+.inputNome-Wrapper .inputPeso-Wrapper .inputAltura-Wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-Wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0 auto 0;
+}
+
 /* estilo para validacoes */
 
 .erro-validacao {
@@ -56,6 +68,8 @@ form .form-control {
   font-size: 14px;
 }
 
-.possui-erro-validacao {
-  color: #f73859;
+.tem-erro-validacao {
+  border-color: red;
+  box-shadow: none;
+  color: red;
 }

@@ -19,7 +19,7 @@ class PacienteController {
     event.preventDefault();
 
     this.listaPacientes.adiciona(this.criaPaciente());
-    
+
     this.pacientesView.update(this.listaPacientes);
 
     this.mensagem.texto = 'Paciente adicionado com sucesso!';
@@ -27,12 +27,6 @@ class PacienteController {
 
     this.limpaForm();
 
-  }
-
-  imcAlto(){
-    const imc = document.querySelector('.info-imc')
-    console.log(imc);
-    return imc
   }
 
   criaPaciente() {
@@ -45,8 +39,8 @@ class PacienteController {
 
   limpaForm() {
     this.inputNome.value = '';
-    this.inputPeso.value = 0;
-    this.inputAltura.value = 0;
+    this.inputPeso.value = '';
+    this.inputAltura.value = '';
     this.inputNome.focus();
   }
 }

@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script type="module" src="../validacoes/appValidacoes.js"></script>
   <link rel="stylesheet" href="../css/bootstrap-4.5.2-dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="../css/bootstrap-4.5.2-dist/js/bootstrap.min.js">
   <link rel="stylesheet" href="../css/index.css">
@@ -33,16 +34,24 @@
       <h2>Adiconar Novo Paciente</h2>
 
       <form onsubmit="controller.adiciona(event)">
-        <label for="nome">Nome</label>
-        <input class="form-control" type="text" id="nome" data-tipo="nome">
+        <div class="inputNome-Wrapper">
+          <label for="nome">Nome</label>
+          <input class="form-control" type="text" id="nome" data-tipo="nome"placeholder="Nome" required>
+        </div>
 
-        <label for="peso">Peso</label>
-        <input class="form-control" type="number" id="peso" data-tipo="peso">
+        <div class="inputPeso-Wrapper">
+          <label for="peso">Peso</label>
+          <input class="form-control" type="number" id="peso" data-tipo="peso" placeholder="Ex: 65" required>
+        </div>
 
-        <label for="altura">Altura</label>
-        <input class="form-control" type="number" id="altura" data-tipo="altura" step=".01">
+        <div class="inputAltura-Wrapper">
+          <label for="altura">Altura</label>
+          <input class="form-control" type="number" id="altura" data-tipo="altura" step=".01" placeholder="Ex: 1.65" required>
+        </div>
 
-        <button class="btn btn-primary" type="submit">Adicionar</button>
+        <div class="btn-Wrapper">
+          <button class="btn btn-primary" type="submit">Adicionar</button>
+        </div>
       </form>
     </section>
   </main>

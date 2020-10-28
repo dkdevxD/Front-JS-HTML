@@ -16,8 +16,8 @@ class PacientesView extends View {
             </tr>
           </thead>
           <tbody>
-            ${modelo.pacientes.map(p => 
-              `
+            ${modelo.pacientes.map(p =>
+      `
                 <tr>
                   <td>${p.nome}</td>
                   <td>${p.peso}</td>
@@ -25,7 +25,7 @@ class PacientesView extends View {
                   <td>${p.imc.toFixed(2)}</td>
                 </tr>
               `
-            ).join('')}
+    ).join('')}
           </tbody>
         </table>
       `
