@@ -1,6 +1,6 @@
-# Caluladora de IMC
-  - Padrao MCV
+# IMC calculator
+  - MCV
   - JS Vanilla
-  - Validações dinâmicas
-  - Tratamento de erros
+  - Dynamic validations
+  - Error handling
   - Design Patterm
